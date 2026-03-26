@@ -1,0 +1,158 @@
+/* Hospital BMS Custom Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global Font & Background Force */
+html, body, [class*="css"], .stApp {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA !important; /* Force Light Grey/White Background */
+    color: #0F172A !important; /* Force Dark Text */
+}
+
+/* Remove default Streamlit header/footer */
+header[data-testid="stHeader"] {
+    display: none;
+}
+footer {
+    display: none;
+}
+.viewerBadge_container__1QSob {
+    display: none;
+}
+
+/* Custom Header Area */
+.main-header {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #E2E8F0;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-title {
+    color: #1E293B;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.brand-subtitle {
+    color: #64748B;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Metric Cards */
+.metric-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+    height: 100%;
+}
+
+.metric-label {
+    color: #64748B;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.metric-value {
+    color: #0F172A;
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.metric-subtext {
+    color: #64748B;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* Status Colors for Borders/Accents */
+.border-teal { border-left: 4px solid #00A86B; }
+.border-red { border-left: 4px solid #EF4444; }
+.border-blue { border-left: 4px solid #3B82F6; }
+.border-orange { border-left: 4px solid #F59E0B; }
+
+/* Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 24px;
+    background-color: white;
+    padding: 1rem 2rem 0;
+    border-bottom: 1px solid #E2E8F0;
+    border-radius: 12px 12px 0 0;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: none;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #00A86B !important; /* Teal Brand Color */
+    border-bottom: 2px solid #00A86B;
+    font-weight: 600;
+}
+
+/* Feature Importance Progress Bars */
+.progress-bar-container {
+    background: #F1F5F9;
+    border-radius: 99px;
+    height: 8px;
+    width: 100%;
+    margin-top: 8px;
+}
+.progress-bar-fill {
+    background: #00A86B;
+    height: 100%;
+    border-radius: 99px;
+}
+
+/* Custom Containers */
+.white-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1E293B;
+    margin-bottom: 1rem;
+}
+
+/* Button Customization */
+.stButton button {
+    background-color: #00A86B;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+.stButton button:hover {
+    background-color: #008f5b;
+    color: white;
+    border-color: #008f5b;
+}
+
+/* Bed Grid Buttons */
+.bed-btn-free { background-color: #00A86B !important; color: white !important; }
+.bed-btn-occ  { background-color: #EF4444 !important; color: white !important; }
+.bed-btn-clean{ background-color: #F59E0B !important; color: white !important; }

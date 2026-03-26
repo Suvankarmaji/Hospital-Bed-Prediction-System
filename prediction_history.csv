@@ -1,0 +1,4 @@
+Age,Gender,Admission_Type,Insurance_Type,Department,Diagnosis,Ward_Type,Severity_Score,Num_Comorbidities,Prev_Hospitalizations,Procedure_Complexity,Lab_Abnormality_Score,Visitors_Count,Blood_Sugar_Level,Admission_Deposit,Patient_Name,Predicted_Stay_Type,Probability,Prediction_Date
+20,Male,Emergency,Private,Cardiology,Angina,General,3,1,0,2,1,2,110,7000,suvo,Long Stay,94.6968413533334,2026-03-26 01:15:39
+20,Female,Elective,Uninsured,Oncology,Radiotherapy,General,2,1,0,2,0,2,110,70,archisa bhatayachariya,Short Stay,7.143390922782331,2026-03-26 12:25:48
+21,Male,Emergency,Private,Neurology,Migraine,ICU,3,1,0,2,1,2,110,7000,aryan,Long Stay,99.3062073512013,2026-03-26 20:03:20
